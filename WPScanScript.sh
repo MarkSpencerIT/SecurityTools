@@ -2,12 +2,14 @@
 
 wpscan --update                                                                                                                                                                                      1 ⨯
 
-wpscan --url site1.com -o /home/kalims/Documents/site1.txt
-wpscan --url site2.co.uk -o /home/kalims/Documents/site2.txt
+wpscan --url site1.com --ignore-main-redirect -o /home/USER/Documents/site1.txt
+
+echo "Time: $(date -Iseconds). WPScan." >> /home/USER/Documents/sum.txt | awk '{print $0,"\n"}'
 
 echo "First site"
-grep "The version is out of date" /home/kalims/Documents/site1.txt
-echo "second site"
-grep "The version is out of date" /home/kalims/Documents/site2.txt
+echo "First site" >> /home/USER/Documents/sum.txt | awk '{print $0,"\n"}'
+grep "WordPress version" /home/USER/Documents/site1.txt >> /home/USER/Documents/sum.txt | awk '{print $0,"\n"}'
+grep "Effective URL" /home/USER/Documents/site1.txt >> /home/USER/Documents/sum.txt | awk '{print $0,"\n"}'
+grep -i -B 4 "The version is out of date" /home/USER/Documents/site1.txt >> /home/USER/Documents/sum.txt | awk '{print $0,"\n"}'
 
 echo "done"
