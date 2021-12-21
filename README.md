@@ -11,4 +11,5 @@ Security Tools and Scripts
 
 Usage - ./DNSZoneTransfer.sh domain.com
 
-_Note_ - don't for get to make the script exacutable (chmod +x ./DNSZoneTransfer.sh)
+_Note 1_ - don't for get to make the script exacutable (chmod +x ./DNSZoneTransfer.sh)
+_Note 2_ - to manually find DNS servers against a domain - " host -t ns domain.com "
