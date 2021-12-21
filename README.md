@@ -7,3 +7,7 @@ Security Tools and Scripts
 
 <b>WifiPasswordFinder.py -</b> Finds out the WIFI password.
 
+<b>DNSZoneTransfer.sh -</b> - Shell script to copy a DNS zone file transfer to find a list of the domains and subdomains with IP's.
+Usage - ./DNSZoneTransfer.sh domain.com
+
+_Note_ - don't for get to make the script exacutable (chmod +x ./DNSZoneTransfer.sh)
