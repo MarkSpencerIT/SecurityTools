@@ -9,6 +9,9 @@ Security Tools and Scripts
 
 <b>DNSZoneTransfer.sh -</b> - Shell script to copy a DNS zone file transfer to find a list of the domains and subdomains with IP's.
 
+<b>SubdomainEnumeration.py -</b> - Python script which enumerates subdomains. There are some great lists here: - https://github.com/rbsec/dnscan
+
+
 Usage - ./DNSZoneTransfer.sh domain.com
 
 _Note 1_ - don't for get to make the script executable  (chmod +x ./DNSZoneTransfer.sh)
